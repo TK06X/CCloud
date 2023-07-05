@@ -107,3 +107,48 @@ pnpm dev
 └── vite.config.ts            vite配置文件
 Git 贡献提交规范
 项目已经内置angular提交规范，通过cz 代替git commit 命令即可
+
+pnpm commit
+注意 ⚠️
+本项目从V1.7版本开始基于vite3构建，由于vite3不再支持node14.18以下版本，使用较低node版本进行安装或启动本项目可能会出现异常。推荐升级至最新稳定版本node16，或使用V1.6版本，V1.6及以下版本使用vite2构建。
+
+运行截图
+登陆页
+login
+
+首页
+dashboard-light
+
+暗黑模式
+dashboard-dark
+
+富文本编辑器
+editor
+
+CRUD列表
+crud
+
+国际化
+i18n
+
+多级菜单
+nested
+
+自适应
+mobile
+
+浏览器支持
+本地开发推荐使用Chrome 90+ 浏览器
+
+支持现代浏览器, 不支持 IE
+
+IEIE	 EdgeEdge	FirefoxFirefox	ChromeChrome	SafariSafari
+not support	last 2 versions	last 2 versions	last 2 versions	last 2 versions
+Q&A
+启动项目进入首页出现401报错怎么回事？
+
+这是由于时间线组件调用了GitHub的API来获取仓库的commit信息，调用API需要申请token，申请token的方法可参考 github的token使用方法，token获取后可以在src/enum/secretEnum.ts中进行修改，在TimeLine.vue组件中，你可以修改 UserEnum.GITHUB_USER,UserEnum.GITHUB_REPO, SecretEnum.GITHUB_ACCESS_TOKEN枚举字段实现监测自己仓库commit信息功能。
+
+登录界面账号密码是多少？
+
+随便填，但是账号和密码需要遵循校验规则，账号为手机号或标准邮箱格式，密码不低于三位。
