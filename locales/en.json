@@ -139,5 +139,6 @@
   "page.common.login.form.link.forget": "Forget Password",
   "page.common.login.form.link.OAuth": "OAuth Login",
   "page.common.login.form.link.btn.qq": "QQ",
-  "page.common.login.form.link.btn.wechat": "WeChat"
+  "page.common.login.form.link.btn.wechat": "WeChat",
+  "page.home.button.add": "New Add"
 }

@@ -5,12 +5,14 @@ import { useI18n } from "vue-i18n";
 let date = null;
 let timer: number | undefined;
 let payTimer: number | undefined;
+
 const { t } = useI18n();
 const workTime = dayjs()
   .startOf("day")
   .add(17, "hour")
   .add(50, "minute")
   .format("YYYY-MM-DD HH:mm:ss");
+
 const countObj = reactive<{ showTime: string }>({
   showTime: ""
 });
@@ -73,8 +75,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="w-full h-full flex flex-col items-center flex-auto justify-center align-center">
-    <div class="clock self-center">
+  <div class="flex flex-col items-center justify-center flex-auto w-full h-full align-center">
+    <div class="self-center clock">
       <div class="inner-circle">
         <div class="hands">
           <div class="dots"></div>
@@ -84,7 +86,8 @@ onMounted(() => {
         </div>
       </div>
     </div>
-    <p class="leading-10 text-gray-500 mt-8 font-bold">
+
+    <p class="mt-8 font-bold leading-10 text-gray-500">
       {{ countObj.showTime }}
     </p>
   </div>

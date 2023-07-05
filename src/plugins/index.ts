@@ -1,6 +1,7 @@
 import { App } from "vue";
 import { setupEcharts } from "./echarts";
 import { setupElementIcons, setupElementPlus } from "./element";
+import { setupAntd } from "./ant";
 import { setupI18n } from "./i18n";
 import { setupPinia } from "./pinia";
 import { setupTailwindcss } from "./tailwindcss";
@@ -15,6 +16,7 @@ export function setupPlugins(app: App) {
   setupI18n(app);
   setupElementIcons(app);
   setupElementPlus(app);
+  setupAntd(app);
   setupDirectives(app);
   setupTailwindcss();
   setupDayjs();

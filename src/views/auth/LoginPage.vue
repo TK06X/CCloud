@@ -28,7 +28,7 @@ const schema = {
     .label(t("page.common.login.form.schema.label.password"))
 };
 
-const { handleSubmit, errors, values } = useForm({
+const { handleSubmit,  values } = useForm({
   initialValues: {
     account: "",
     password: ""

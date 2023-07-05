@@ -89,6 +89,7 @@ async function onLoad() {
         UserEnum.GITHUB_REPO,
         SecretEnum.GITHUB_ACCESS_TOKEN
       );
+      // res = await fetchMockCommits();
     } else {
       res = await fetchMockCommits();
     }
@@ -112,7 +113,7 @@ onMounted(async () => {
     <template #title> {{ t("page.common.dashboard.card.timeline") }} </template>
     <template #actions>
       <i-mdi-refresh
-        class="cursor-pointer text-gray-400 dark:text-white hover:rotate-180 duration-500"
+        class="text-gray-400 duration-500 cursor-pointer dark:text-white hover:rotate-180"
         style="font-size: 1.2em"
         @click="() => onLoad()"
       />

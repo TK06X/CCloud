@@ -20,7 +20,7 @@ const { activityColumns, activityTableData } = setupDashobardAttributes();
           style="width: 100%"
         >
           <template #category="{ scope }">
-            <span class="p-1 rounded-md bg-gray-500 text-white text-sm">{{
+            <span class="p-1 text-sm text-white bg-gray-500 rounded-md">{{
               scope.row.category
             }}</span>
           </template>

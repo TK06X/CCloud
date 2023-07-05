@@ -4,10 +4,16 @@ const routes = [
   {
     path: "/",
     name: "HomePage",
-    redirect: { name: "Dashboard" },
+    redirect: { name: "Home" },
     component: () => import("@/layouts/common-page.vue"),
-    meta: { auth: true, menu: { title: "router.home", icon: "Monitor" } },
+    meta: { auth: true, menu: { title: "router.homepage", icon: "Monitor" } },
     children: [
+      {
+        path: "home",
+        name: "Home",
+        meta: { menu: { title: "router.home" } },
+        component: () => import("@/views/Home.vue")
+      },
       {
         path: "dashboard",
         name: "Dashboard",

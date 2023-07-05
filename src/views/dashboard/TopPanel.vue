@@ -33,7 +33,8 @@ const animalList = [
     category: "精神系",
     color: "bg-yellow-500",
     description: "最近在肯德基很火",
-    img: Keda
+    img: Keda,
+    sb: 2
   },
   {
     id: 4,
@@ -43,7 +44,8 @@ const animalList = [
     category: "水系",
     color: "bg-blue-400",
     description: "他会咬你信不信",
-    img: Jieni
+    img: Jieni,
+    sb: 0
   }
 ];
 </script>
@@ -57,6 +59,7 @@ const animalList = [
         <template #badge> {{ animal.unit }} </template>
         <template #banner> {{ animal.category }} </template>
         <template #description> {{ animal.description }} </template>
+        <template #sb> {{ animal.sb }} </template>
       </Panel>
     </el-col>
   </el-row>

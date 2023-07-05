@@ -7,7 +7,7 @@
   "golbal.welcome.message.hello_evening": "晚上好",
   "golbal.logout.message.confirm": "是否确认退出系统？",
   "golbal.logout.message.success": "退出成功",
-  "global_title": "喵喵App管理系统",
+  "global_title": "天花",
   "global.history.dropdown.option.reload": "重新加载",
   "global.history.dropdown.option.closeSelf": "关闭当前",
   "global.history.dropdown.option.closeLeft": "关闭左侧",
@@ -16,8 +16,9 @@
   "global.history.dropdown.option.closeAll": "关闭全部",
   "github": "Github 仓库",
   "logout": "退出登录",
-  "router.home": "首页",
-  "router.dashboard": "工作台",
+  "router.homepage": "首页",
+  "router.home": "工作台1",
+  "router.dashboard": "工作台2",
   "router.design": "创意设计",
   "router.article": "文章列表",
   "router.article_remote": "文章列表（远程）",
@@ -139,6 +140,6 @@
   "page.common.login.form.link.forget": "忘记密码",
   "page.common.login.form.link.OAuth": "第三方登录",
   "page.common.login.form.link.btn.qq": "QQ",
-  "page.common.login.form.link.btn.wechat": "微信"
-
+  "page.common.login.form.link.btn.wechat": "微信",
+  "page.home.button.add": "添加"
 }
