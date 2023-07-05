@@ -19,7 +19,7 @@ const schema = {
   account: yup
     .string()
     .required()
-    .matches(/^\d{11}|.+@.+$/, t("page.common.login.form.schema.email"))
+    .min(3, t("page.common.login.form.schema.password"))
     .label(t("page.common.login.form.schema.label.email")),
   password: yup
     .string()
