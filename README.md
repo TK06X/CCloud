@@ -38,6 +38,7 @@ pnpm install
 运行
 pnpm dev
 项目结构
+```bash
 ├── LICENSE                   授权文件
 ├── README.md                 README
 ├── dist                      编译目录
@@ -105,6 +106,8 @@ pnpm dev
 │   ├── plugins               vite插件模块
 │   └── util.ts               vite工具库
 └── vite.config.ts            vite配置文件
+```
+
 Git 贡献提交规范
 项目已经内置angular提交规范，通过cz 代替git commit 命令即可
 
